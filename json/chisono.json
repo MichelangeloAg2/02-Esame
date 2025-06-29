@@ -1,0 +1,111 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Chi sono",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/main.min.css",
+            "css/chisono.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "header": {
+        "h1": "Conosciamoci!",
+        "h2": "Me, myself and I... In breve!"
+    },
+    "sezione_myself": {
+        "immagine": {
+            "src": "Immagini/myself.png",
+            "alt": "myself",
+            "width": "500",
+            "height": "500"
+        },
+        "testo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mi et enim accumsan porta. Vestibulum non nisi non tellus vulputate gravida venenatis non metus. Proin gravida sagittis nisl, ac hendrerit quam ultrices eu. Vivamus sagittis quis neque at dictum. Nam ac nunc eu dui placerat consequat. Donec sapien urna, dapibus eu enim vel, ullamcorper placerat lectus. Morbi non ligula ut dui euismod ornare sit amet vitae lacus. Donec lobortis augue quis iaculis tincidunt. Phasellus gravida sapien nec consequat iaculis."
+    },
+    "sezione_myskill": {
+        "titolo": "My skills and more!",
+        "sottotitolo": "Cosa posso fare...",
+        "immagine": {
+            "src": "Immagini/myskill.png",
+            "alt": "myskill",
+            "width": "500",
+            "height": "500"
+        },
+        "testo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mi et enim accumsan porta. Vestibulum non nisi non tellus vulputate gravida venenatis non metus. Proin gravida sagittis nisl, ac hendrerit quam ultrices eu. Vivamus sagittis quis neque at dictum. Nam ac nunc eu dui placerat consequat. Donec sapien urna, dapibus eu enim vel, ullamcorper placerat lectus. Morbi non ligula ut dui euismod ornare sit amet vitae lacus. Donec lobortis augue quis iaculis tincidunt. Phasellus gravida sapien nec consequat iaculis."
+    },
+    "cta_finale": {
+        "testo": "Vuoi conoscere meglio il mio lavoro? Dai uno sguardo",
+        "link": {
+            "href": "i-miei-lavori.php",
+            "titolo": "I miei lavori",
+            "testo": "QUI"
+        }
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

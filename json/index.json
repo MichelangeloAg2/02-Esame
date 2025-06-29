@@ -1,0 +1,162 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Homepage",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/index.min.css",
+            "css/main.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "main": {
+        "header": {
+            "immagine": "Immagini/header.png",
+            "alt": "H1",
+            "classe": "presentation"
+        },
+        "offerte": [
+            {
+                "classe": "offerta1",
+                "titolo": "Pacchetto Vetrina",
+                "immagine": "Immagini/offerta.png",
+                "alt": "offerta1",
+                "link": "services.php",
+                "descrizione": [
+                    "Codice Back/Front End",
+                    "Studio in Figma",
+                    "Set Fotografico"
+                ]
+            },
+            {
+                "classe": "offerta2",
+                "titolo": "Pacchetto Sito Web Advanced",
+                "immagine": "Immagini/offerta.png",
+                "alt": "offerta2",
+                "link": "services.php",
+                "descrizione": [
+                    "Codice Back/Front End",
+                    "Pannello amministrazione",
+                    "Area Riservata Clienti/Soci"
+                ]
+            },
+            {
+                "classe": "offerta3",
+                "titolo": "Pacchetto E-commerce",
+                "immagine": "Immagini/offerta.png",
+                "alt": "offerta3",
+                "link": "services.php",
+                "descrizione": [
+                    "Codice Back/Front End",
+                    "Grafica personalizzata",
+                    "Pannello di controllo ordini e vetrina prodotti"
+                ]
+            }
+        ],
+        "progetti": [
+            {
+                "immagine": "Immagini/ciliegio.png",
+                "alt": "ciliegio",
+                "titolo": "Fiori di ciliegio",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "immagine": "Immagini/gdrbychat.png",
+                "alt": "GDR",
+                "titolo": "GDR by Chat",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "immagine": "Immagini/ristorante-perla.png",
+                "alt": "ristorante",
+                "titolo": "Ristorante 'La Perla'",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "immagine": "Immagini/watercolor2.png",
+                "alt": "watercolor2",
+                "titolo": "Watercolor by SC",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "immagine": "Immagini/watercolor1.png",
+                "alt": "watercolor1",
+                "titolo": "Watercolor by SC",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "immagine": "Immagini/buttonplug.png",
+                "alt": "buttonplug",
+                "titolo": "Button&Plug",
+                "link": "i-miei-lavori.php"
+            }
+        ]
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

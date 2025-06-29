@@ -1,0 +1,128 @@
+@import "variables";
+
+main {
+    padding: 70px 20px 10px 10px;
+}
+
+/* CSS primo row */
+.presentation-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+#image-circle,
+#image-circle2 {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#image,
+#image1 {
+    border-radius: 50%;
+}
+
+/* CSS secondo row */
+.description-work {
+    @include alldivsetts;
+    border-color: $desc-border-color;
+    background-color: $desc-bg-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+#description {
+    justify-content: center;
+    align-items: center;
+}
+
+#project-picture {
+    justify-content: center;
+    align-items: center;
+}
+
+#projectp {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS terzo row */
+.workslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+#list {
+    @include alldivsetts;
+    border-color: $list-border-color;
+    background-color: $list-bg-color;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+    width: 50%;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+#work,
+#work2,
+#work3 {
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+    }
+}
+
+#feedback {
+    @include alldivsetts;
+    border-color: $feedback-border-color;
+    background-color: $feedback-bg-color;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

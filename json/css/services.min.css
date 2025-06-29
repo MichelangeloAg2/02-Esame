@@ -1,0 +1,60 @@
+main {
+    padding: 70px 10px 10px 10px
+}
+
+h1,
+h2 {
+    text-align: center
+}
+
+.WebDev,
+.WebDes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px
+}
+
+@media all and (max-width: 600px) {
+
+    .WebDev,
+    .WebDes {
+        flex-direction: column
+    }
+}
+
+#service {
+    width: 100%;
+    height: auto
+}
+
+.first {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+    border-color: #875887;
+    background-color: #e7c4e7;
+    float: none;
+    box-sizing: border-box
+}
+
+.first p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+@media all and (max-width: 768px) {
+    .first {
+        width: 75%
+    }
+}

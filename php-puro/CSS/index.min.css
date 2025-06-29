@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center
+}
+
+img.presentation {
+    margin-top: 53px;
+    width: 100%;
+    height: auto
+}
+
+.container-offerte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (max-width: 600px) {
+    .container-offerte {
+        flex-direction: column;
+        margin: 0 10px 0
+    }
+}
+
+h3 {
+    margin: 10px 0 10px;
+    color: #000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
+}
+
+.offerta1,
+.offerta2,
+.offerta3 {
+    background-color: #e3fdc8;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+    border-color: #10bf4d
+}
+
+.offerta1:hover,
+.offerta2:hover,
+.offerta3:hover {
+    border: 0;
+    box-shadow: 5px 5px 5px #969696
+}
+
+#offerta1,
+#offerta2,
+#offerta3 {
+    border-radius: 10px
+}
+
+.container-progetti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+div.galleria {
+    border: 2px solid #000
+}
+
+div.galleria:hover {
+    border: 3px solid #000
+}
+
+div.galleria img {
+    width: 100%;
+    height: auto
+}
+
+div.descrizione {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff
+}
+
+.responsive {
+    padding: 0 6px;
+    width: 16.66667%;
+    float: left
+}
+
+@media screen and (max-width: 800px) {
+    .responsive {
+        width: 33.33334%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 75%
+    }
+}

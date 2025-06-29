@@ -1,0 +1,53 @@
+@import "variables";
+
+main {
+    padding: 70px 10px 10px 10px;
+}
+
+/**Servizi WebDev**/
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+.WebDev,
+.WebDes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media all and (max-width: 600px) {
+        flex-direction: column;
+
+    }
+
+}
+
+#service {
+    width: 100%;
+    height: auto;
+
+}
+
+.first {
+    @include alldivsetts;
+    border-color: rgb(135, 88, 135);
+    background-color: rgb(231, 196, 231);
+    float: left;
+
+    p {
+        font-size: $fontsizetext;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media all and (max-width: 768px) {
+        width: 75%;
+    }
+}

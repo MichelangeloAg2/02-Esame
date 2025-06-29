@@ -1,0 +1,220 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Servizi",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/main.min.css",
+            "css/services.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "main": {
+        "servizi": {
+            "webDevelopment": {
+                "titolo": "Servizi di Progettazione Web",
+                "classe": "WebDev",
+                "offerte": [
+                    {
+                        "nome": "Offerta 1",
+                        "immagine": {
+                            "src": "Immagini/offerta.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 2",
+                        "immagine": {
+                            "src": "Immagini/offerta.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 3",
+                        "immagine": {
+                            "src": "Immagini/offerta.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 4",
+                        "immagine": {
+                            "src": "Immagini/offerta.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 5",
+                        "immagine": {
+                            "src": "Immagini/offerta.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    }
+                ]
+            },
+            "webDesign": {
+                "titolo": "Servizi di Web Design",
+                "classe": "WebDes",
+                "offerte": [
+                    {
+                        "nome": "Offerta 1",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 2",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 3",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    },
+                    {
+                        "nome": "Offerta 4",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "Service"
+                        },
+                        "dettagli": {
+                            "tipo": "Tipo di Servizio",
+                            "codici": "Codici",
+                            "tempistiche": "Tempistiche",
+                            "costi": "Costi"
+                        }
+                    }
+                ]
+            },
+            "callToAction": {
+                "titolo": "Non sei ancora convinto?",
+                "testo": "Compila questo form e fisseremo una call per capire bene di cosa hai bisogno e di quale offerta sia più giusta per te!",
+                "link": {
+                    "href": "contatti.php",
+                    "title": "Contatti"
+                }
+            }
+        }
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

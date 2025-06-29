@@ -1,0 +1,150 @@
+main {
+    padding: 70px 20px 10px 10px
+}
+
+.presentation-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (max-width: 600px) {
+    .presentation-work {
+        flex-direction: column
+    }
+}
+
+#image-circle,
+#image-circle2 {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center
+}
+
+#presentation {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center
+}
+
+#image,
+#image1 {
+    border-radius: 50%
+}
+
+.description-work {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+    border-color: #8d5353;
+    background-color: #eacece;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+@media screen and (max-width: 600px) {
+    .description-work {
+        flex-direction: column
+    }
+}
+
+#description {
+    justify-content: center;
+    align-items: center
+}
+
+#project-picture {
+    justify-content: center;
+    align-items: center
+}
+
+#projectp {
+    width: 100%;
+    height: auto
+}
+
+.workslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+}
+
+@media screen and (max-width: 600px) {
+    .workslist {
+        flex-direction: column
+    }
+}
+
+#list {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+    border-color: #5a538d;
+    background-color: #d8ceea;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+    width: 50%
+}
+
+@media screen and (max-width: 600px) {
+    #list {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+#work,
+#work2,
+#work3 {
+    opacity: .5
+}
+
+#work:hover,
+#work2:hover,
+#work3:hover {
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000
+}
+
+#feedback {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+    border-color: #8d8c53;
+    background-color: #e5eace;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%
+}
+
+@media screen and (max-width: 600px) {
+    #feedback {
+        width: 100%;
+        margin-top: 20px
+    }
+}

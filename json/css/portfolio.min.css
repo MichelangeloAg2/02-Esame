@@ -1,0 +1,102 @@
+main {
+    padding: 70px 10px 10px 10px
+}
+
+.HTML,
+.Photoshop,
+.CSS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+}
+
+@media screen and (max-width: 500px) {
+
+    .HTML,
+    .Photoshop,
+    .CSS {
+        flex-direction: column;
+        margin: 0 20px
+    }
+}
+
+p.name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px
+}
+
+a.apri {
+    background-color: #94d9c0;
+    border-radius: 15px;
+    border: solid;
+    color: #238b65;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s
+}
+
+a.apri:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, .24), 0 17px 50px rgba(0, 0, 0, .19)
+}
+
+#image-1,
+#image-2,
+#image-3,
+#image-4,
+#imagec1,
+#imagec2,
+#imagec3,
+#imagec4,
+#imagep1,
+#imagep2,
+#imagep3,
+#imagep4 {
+    width: 80%;
+    height: auto;
+    margin: 8px 5px
+}
+
+#HTML1,
+#HTML2,
+#HTML3,
+#HTML4 {
+    text-align: center;
+    background-color: #eae8ce;
+    width: 100%;
+    margin: 2px 6px 4px;
+    border-radius: 10px;
+    border: 2px solid #81783f;
+    float: left
+}
+
+#CSS1,
+#CSS2,
+#CSS3,
+#CSS4 {
+    text-align: center;
+    background-color: #ead3ce;
+    width: 100%;
+    margin: 2px 6px 4px;
+    border-radius: 10px;
+    border: 2px solid #813f3f;
+    float: left
+}
+
+#PS1,
+#PS2,
+#PS3,
+#PS4 {
+    text-align: center;
+    background-color: #ceceea;
+    width: 100%;
+    margin: 2px 6px 4px;
+    border-radius: 10px;
+    border: 2px solid #513f64;
+    float: left
+}

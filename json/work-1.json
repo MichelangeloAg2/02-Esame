@@ -1,0 +1,177 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Work1",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/main.min.css",
+            "css/work1.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "main": {
+        "titolo": "Curriculum Vitae - Agasucci",
+        "sezioni": [
+            {
+                "tipo": "presentazione",
+                "immagini": [
+                    {
+                        "src": "Immagini/ciliegio.png",
+                        "alt": "immaginecerchio"
+                    },
+                    {
+                        "src": "Immagini/ciliegio.png",
+                        "alt": "immaginecerchio1"
+                    }
+                ],
+                "testo": {
+                    "cliente": "Agasucci Michelangelo",
+                    "periodo": "Febbraio-Aprile 2025",
+                    "tipo_lavoro": "Stesura HTML Curriculum",
+                    "link": {
+                        "href": "CV.html",
+                        "testo": "CV-Agasucci"
+                    }
+                }
+            },
+            {
+                "tipo": "descrizione",
+                "contenuto": [
+                    {
+                        "titolo": "Tipo di Progetto",
+                        "testo": "BLA BLA BLA BLA BLA ..."
+                    },
+                    {
+                        "titolo": "Come è stato creato",
+                        "testo": "BLA BLA BLA BLA BLA ..."
+                    },
+                    {
+                        "titolo": "Future applicazioni",
+                        "testo": "BLA BLA BLA BLA BLA ..."
+                    }
+                ],
+                "immagine": {
+                    "src": "Immagini/CVAM.png",
+                    "alt": "CVAM",
+                    "width": "450",
+                    "height": "350"
+                }
+            },
+            {
+                "tipo": "workslist",
+                "titolo": "Altri lavori simili",
+                "works": [
+                    {
+                        "src": "Immagini/gdrbychat.png",
+                        "alt": "gdrbychat",
+                        "nome": "GDR by Chat",
+                        "width": "100",
+                        "height": "100"
+                    },
+                    {
+                        "src": "Immagini/watercolor2.png",
+                        "alt": "watercolor2",
+                        "nome": "Art&Watercolor by Stefania Curzi",
+                        "width": "100",
+                        "height": "100"
+                    },
+                    {
+                        "src": "Immagini/ristorante-perla.png",
+                        "alt": "ristorante-perla",
+                        "nome": "Sito Ristorante \"La Perla\"",
+                        "width": "100",
+                        "height": "100"
+                    }
+                ]
+            },
+            {
+                "tipo": "feedback",
+                "titolo": "Come valuti questo progetto?",
+                "icone": [
+                    {
+                        "fa": "fa-thumbs-o-up",
+                        "colore": "green",
+                        "dimensione": "48px"
+                    },
+                    {
+                        "fa": "fa-thumbs-o-down",
+                        "colore": "rgb(169, 22, 22)",
+                        "dimensione": "48px"
+                    }
+                ],
+                "testo": "Cosa ne pensi? Se ti piace il lavoro e vuoi qualcosa di simile, clicca QUI. Altrimenti, puoi sempre richiedere un appuntamento, sia tramite il link precedente che per email a questo indirizzo: michelangelo.agasucci@gmail.com! Ti aspetto :)",
+                "link": {
+                    "href": "contatti.html",
+                    "testo": "QUI"
+                }
+            }
+        ]
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

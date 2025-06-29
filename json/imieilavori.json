@@ -1,0 +1,245 @@
+{
+    "head": {
+        "titolo": "Otter's Club - I miei lavori",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/portfolio.min.css",
+            "css/main.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "main": {
+        "works": {
+            "html": {
+                "titolo": "HTML Works",
+                "classe": "HTML",
+                "lavori": [
+                    {
+                        "id": "HTML1",
+                        "nome": "CV-Agasucci",
+                        "immagine": {
+                            "src": "Immagini/html.png",
+                            "alt": "avatar"
+                        },
+                        "link": {
+                            "href": "work-1.php",
+                            "title": "Curriculum Vitae-Agasucci"
+                        }
+                    },
+                    {
+                        "id": "HTML2",
+                        "nome": "GDR by Chat",
+                        "immagine": {
+                            "src": "Immagini/gdrbychat.png",
+                            "alt": "GDR"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "GDR by Chat"
+                        }
+                    },
+                    {
+                        "id": "HTML3",
+                        "nome": "Art&Watercolor",
+                        "immagine": {
+                            "src": "Immagini/watercolor1.png",
+                            "alt": "dipinto-mare"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Art&Watercolor by Stefania Curzi"
+                        }
+                    },
+                    {
+                        "id": "HTML4",
+                        "nome": "\"La Perla\"",
+                        "immagine": {
+                            "src": "Immagini/ristorante-perla.png",
+                            "alt": "ristorante-perla"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Ristorante La Perla"
+                        }
+                    }
+                ]
+            },
+            "css": {
+                "titolo": "CSS Works",
+                "classe": "CSS",
+                "lavori": [
+                    {
+                        "id": "CSS1",
+                        "nome": "NaviBar-Cristal",
+                        "immagine": {
+                            "src": "Immagini/css.png",
+                            "alt": "logomenu"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "NaviBar 4 Cristal"
+                        }
+                    },
+                    {
+                        "id": "CSS2",
+                        "nome": "Div-Art&Watercolor",
+                        "immagine": {
+                            "src": "Immagini/watercolor2.png",
+                            "alt": "dipinto-montagna"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Div 4 Art&Watercolor"
+                        }
+                    },
+                    {
+                        "id": "CSS3",
+                        "nome": "CV-Cherry Blossom",
+                        "immagine": {
+                            "src": "Immagini/ciliegio.png",
+                            "alt": "ciliegio"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Styling 4 CV-Cherry Blossom"
+                        }
+                    },
+                    {
+                        "id": "CSS4",
+                        "nome": "Backgrounds&Shadows",
+                        "immagine": {
+                            "src": "Immagini/bgshadow.png",
+                            "alt": "backgroundshadow"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Backgrounds&Shadows"
+                        }
+                    }
+                ]
+            },
+            "photoshop": {
+                "titolo": "Photoshop Works",
+                "classe": "Photoshop",
+                "lavori": [
+                    {
+                        "id": "PS1",
+                        "nome": "Art&Watercolor",
+                        "immagine": {
+                            "src": "Immagini/buttonplug.png",
+                            "alt": "buttonplugwatercolor"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Buttons and Plugs"
+                        }
+                    },
+                    {
+                        "id": "PS2",
+                        "nome": "Favicon",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "favicon"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Favicon 4 Otter's Club"
+                        }
+                    },
+                    {
+                        "id": "PS3",
+                        "nome": "UX Design",
+                        "immagine": {
+                            "src": "Immagini/PS.png",
+                            "alt": "uxottersclub"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "UX Design 4 Otter's Club"
+                        }
+                    },
+                    {
+                        "id": "PS4",
+                        "nome": "Art&Watercolor",
+                        "immagine": {
+                            "src": "Immagini/watercolor1.png",
+                            "alt": "dipinto-mare"
+                        },
+                        "link": {
+                            "href": "#",
+                            "title": "Background Image"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

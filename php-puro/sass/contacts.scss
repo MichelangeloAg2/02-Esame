@@ -1,0 +1,113 @@
+@import 'variables';
+
+main {
+    padding: 70px 30px 10px 10px;
+}
+
+input[type='text'],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label.contact {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type='submit'] {
+    background-color: $btn-bg-color;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+    &:hover {
+        background-color: $btn-hover-bg-color;
+    }
+}
+
+.contatti {
+    @include alldivsetts;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-color: $contatti-border-color;
+    background-color: $contatti-bg-color;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.map {
+    width: 50%;
+    margin-top: 6px;
+}
+
+#mappa {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.recapiti {
+    width: 50%;
+    margin-top: 6px;
+}
+
+.container {
+    @include alldivsetts;
+    border-color: $container-border-color;
+    background-color: $container-bg-color;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col-30 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-70 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive per il cambio di Device. Ho preferito lasciarlo così, per una questione organizzativa del lavoro*/
+@media screen and (max-width: 600px) {
+
+    .col-30,
+    .col-70,
+    .map,
+    .recapiti,
+    input[type='submit'] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .contatti {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+        height: auto;
+    }
+}

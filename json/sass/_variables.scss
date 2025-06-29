@@ -1,0 +1,69 @@
+/**Questi sono i main settings per le pagine**/
+
+$fontfamily: 'Trebuchet MS',
+'Lucida Sans Unicode',
+'Lucida Grande',
+'Lucida Sans',
+Arial,
+sans-serif;
+$hcolors: #000000;
+$textareacolors: #000000;
+$fontsizetext:1.3rem;
+
+/**Settings per la navbar**/
+
+$bgcolornav: rgb(176, 228, 230);
+$textcolornavbar: rgb(22, 51, 52);
+$menuvoicesbghover: beige;
+$sizetextmenu: 1.5rem;
+
+/**Settings per il footer**/
+
+$footercolor: rgb(176, 228, 230);
+$textcolor: rgb(22, 51, 52);
+
+/**Settings per i nav**/
+
+@mixin alldivsetts {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    margin: 10px 5px 4px;
+    text-align: center;
+}
+
+/**Settings per i servizi**/
+$divColor: rgb(230, 176, 230);
+
+/*Variabili per portfolio*/
+$color-html: rgb(234, 232, 206);
+$border-html: rgb(129, 120, 63);
+
+$color-css: rgb(234, 211, 206);
+$border-css: rgb(129, 63, 63);
+
+$color-ps: rgb(206, 206, 234);
+$border-ps: rgb(81, 63, 100);
+
+/*Variabili per il form*/
+
+$input-border-color: #9897e7;
+$btn-bg-color: #047eaa;
+$btn-hover-bg-color: #4945a0;
+
+$contatti-border-color: rgb(141, 83, 83);
+$contatti-bg-color: rgb(228, 195, 195);
+
+$container-border-color: rgb(83, 90, 141);
+$container-bg-color: rgb(206, 222, 234);
+
+/*Variabili per la sezione work*/
+$desc-border-color: rgb(141, 83, 83);
+$desc-bg-color: rgb(234, 206, 206);
+
+$list-border-color: rgb(90, 83, 141);
+$list-bg-color: rgb(216, 206, 234);
+
+$feedback-border-color: rgb(141, 140, 83);
+$feedback-bg-color: rgb(229, 234, 206);

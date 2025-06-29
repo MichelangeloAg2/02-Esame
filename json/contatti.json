@@ -1,0 +1,187 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Contatti",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/main.min.css",
+            "css/contacts.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "main": {
+        "titolo": "Contatti&More",
+        "sezioni": [
+            {
+                "tipo": "contatti",
+                "mappa": {
+                    "src": "Immagini/mappa.png",
+                    "alt": "mappa",
+                    "width": 450,
+                    "height": 350
+                },
+                "recapiti": {
+                    "titolo": "Recapiti",
+                    "dati": [
+                        {
+                            "icona": "fa-address-card-o",
+                            "testo": "Otter's Club-by Michelangelo Agasucci"
+                        },
+                        {
+                            "icona": "fa-phone",
+                            "testo": "Telefono: +39 3484080764"
+                        },
+                        {
+                            "icona": "fa-envelope-o",
+                            "testo": "Email: michelangelo.agasucci@gmail.com"
+                        },
+                        {
+                            "icona": "fa-hand-o-right",
+                            "testo": "Indirizzo: Viale Pantelleria n°35, 00141, Roma (RM), Italy"
+                        }
+                    ]
+                }
+            },
+            {
+                "tipo": "form",
+                "titolo": "Vuoi essere ricontattato?",
+                "descrizione": "Compila il form qui sotto! Riceverai nostre notizie nel minor tempo possibile!",
+                "action": "process_form.php",
+                "method": "post",
+                "campi": [
+                    {
+                        "tipo": "select",
+                        "label": "Cosa ti serve?",
+                        "name": "motivo",
+                        "opzioni": [
+                            {
+                                "value": "sito",
+                                "testo": "Vorrei creare il mio sito"
+                            },
+                            {
+                                "value": "aggiusta",
+                                "testo": "Vorrei aggiornare il mio sito"
+                            },
+                            {
+                                "value": "consulenza",
+                                "testo": "Vorrei chiedere informazioni"
+                            }
+                        ]
+                    },
+                    {
+                        "tipo": "text",
+                        "label": "Nome:",
+                        "name": "nome"
+                    },
+                    {
+                        "tipo": "text",
+                        "label": "Cognome:",
+                        "name": "cognome"
+                    },
+                    {
+                        "tipo": "text",
+                        "label": "La tua mail:",
+                        "name": "email"
+                    },
+                    {
+                        "tipo": "radio-group",
+                        "label": "Presa visione della Privacy Policy do il consenso al trattamento dei dati personali:",
+                        "link": {
+                            "href": "privacy-policy.html",
+                            "testo": "Privacy Policy"
+                        },
+                        "name": "privacy",
+                        "opzioni": [
+                            {
+                                "value": "Acconsento",
+                                "testo": "Acconsento"
+                            },
+                            {
+                                "value": "Non acconsento",
+                                "testo": "Non Acconsento"
+                            }
+                        ]
+                    },
+                    {
+                        "tipo": "textarea",
+                        "label": "Questo spazio ci aiuterà a capire bene la tua richiesta. Scrivi più informazioni possibili!",
+                        "name": "dettagli",
+                        "rows": 10,
+                        "cols": 50
+                    },
+                    {
+                        "tipo": "submit",
+                        "value": "Invia"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}
