@@ -45,7 +45,7 @@
         <div class="container">
             <p style="text-align: center;">Compila il form qui sotto! Riceverai nostre notizie nel minor tempo
                 possibile!</p>
-            <form action="process_form.php" method="post">
+            <form action="process_form.php" method="post" novalidate>
                 <div class="row">
                     <div class="col-30">
                         <label class="contact" for="motivo">Cosa ti serve?</label>
