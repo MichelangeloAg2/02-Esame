@@ -2,3 +2,4 @@
 2025-07-04 06:21:06	sito	Michelangelo	Agasucci	michelangelo.agasucci@gmail.com	Acconsento	
 2025-07-06 09:02:29	sito	Aldo	Rossi	aldo@rossi.com	Acconsento	
 2025-07-06 09:06:17	sito	Michelangelo	Agasucci	michelangelo.agasucci@gmail.com	Acconsento	
+2025-07-09 06:32:56	sito	Michelangelo	Agasucci	michelangelo.agasucci@gmail.com	Acconsento	

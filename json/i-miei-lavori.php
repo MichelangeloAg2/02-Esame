@@ -2,6 +2,9 @@
 // Caricamento del file JSON
 $string = file_get_contents("imieilavori.json");
 $dati = json_decode($string, true);
+
+// Recupero categoria da query string (es. ?categoria=css)
+$categoriaFiltro = isset($_GET['categoria']) ? strtolower($_GET['categoria']) : null;
 ?>
 
 <!DOCTYPE html>
@@ -26,12 +29,17 @@ $dati = json_decode($string, true);
 
 <body>
 
-    <!-- HEADER/MENU -->
+    <!-- HEADER / MENU -->
     <?php include('menu.php'); ?>
 
     <!-- MAIN -->
     <main>
-        <?php foreach ($dati['main']['works'] as $categoria) { ?>
+        <?php
+        foreach ($dati['main']['works'] as $key => $categoria) {
+            if ($categoriaFiltro && strtolower($key) !== $categoriaFiltro) {
+                continue;
+            }
+        ?>
             <h1 style="text-align: center; margin-top: 15px;"><u><?php echo $categoria['titolo']; ?></u></h1>
             <br>
             <div class="<?php echo $categoria['classe']; ?>">
@@ -40,17 +48,25 @@ $dati = json_decode($string, true);
                         <p class="name"><u><?php echo $lavoro['nome']; ?></u></p>
                         <img src="<?php echo $lavoro['immagine']['src']; ?>" alt="<?php echo $lavoro['immagine']['alt']; ?>">
                         <br>
-                        <a class="apri" href="<?php echo $lavoro['link']['href']; ?>" title="<?php echo $lavoro['link']['title']; ?>">Apri</a>
+                        <a class="apri"
+                            href="work.php?id=<?php echo $lavoro['id']; ?>"
+                            title="Apri dettagli per <?php echo $lavoro['nome']; ?>">
+                            Apri
+                        </a>
                         <br>
                     </div>
                 <?php } ?>
             </div>
             <br>
         <?php } ?>
+
+        <?php if ($categoriaFiltro && !array_key_exists($categoriaFiltro, $dati['main']['works'])): ?>
+            <p style="text-align:center; color:red;">Categoria "<?php echo htmlspecialchars($categoriaFiltro); ?>" non trovata.</p>
+        <?php endif; ?>
     </main>
 
     <!-- FOOTER -->
-    <?php include('footer.php') ?>
+    <?php include('footer.php'); ?>
 
 </body>
 

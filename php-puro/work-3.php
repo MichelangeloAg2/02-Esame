@@ -17,38 +17,38 @@
         ?>
 
     </header>
+
     <main>
         <div class="container">
             <div class="presentation-work">
                 <div id="image-circle">
-                    <img id="image" src="Immagini/ciliegio.png" alt="immaginecerchio">
+                    <img id="image" src="Immagini/css.png" alt="immaginecerchio">
                 </div>
                 <div id="presentation">
-                    <h1 style="text-align: center;">Curriculum Vitae-Agasucci</h1><br>
+                    <h1 style="text-align: center;">Loro personalizzato</h1><br>
                     <p style="text-align: center;">Cliente: Agasucci Michelangelo<br>
                         Periodo: Febbraio-Aprile 2025<br>
-                        Tipo di Lavoro: Stesura HTML Curriculum<br>
-                        Link: <a href="CV.html">CV-Agasucci</a>
+                        Tipo di Lavoro: Creazione del logo per il personal brand<br>
+                        Link: <a href="#"></a>
                     </p>
                 </div>
                 <div id="image-circle2">
-                    <img id="image1" src="Immagini/ciliegio.png" alt="immaginecerchio1">
+                    <img id="image1" src="Immagini/css.png" alt="immaginecerchio1">
                 </div>
             </div>
+
 
             <div class="description-work">
                 <div id="description">
                     <h3>Tipo di Progetto:</h3>
-                    <p>Stesura del Curriculum Vitae, in formato HTML5. </p><br>
+                    <p>Creazione del logo per il brand personale. </p><br>
                     <h3>Come è stato creato:</h3>
-                    <p>Ho impostato lo scheletro di tutta la pagina, cercando di dividere il tutto in diverse sezione. Ho inserito tag come
-                        <i>section</i> per poter raggruppare in compartimenti il lavoro e renderlo più semplice da lavorare e gestire per il futuro.
-                    </p><br>
+                    <p>Ho utilizzato principalmente Photoshop, per la realizzazione. Basandomi sul disegno del mio tatuaggio, ho attuato diverse modifiche, sia al colore che alla struttura principale. Grazie agli strumenti presenti nella barra laterale, sono riuscito a rimuovere tutto il colore in eccesso, lasciando solo la base colorata nera. Successivamente, ho provveduto a rimuovere uno dei layer principali, così da creare un'immagine .png vuota sullo sfondo. Facendo così, ho alleggerito lìimmagine che ora, in base al colore che darò al sito, risulterà più semplice da gestire!</p><br>
                     <h3>Future applicazioni:</h3>
-                    <p>Portando avanti il lavoro, si potrà ottenere una pagina di Curriculum dinamica, aggiungendo inoltre il CSS e le funzioni di JS, per renderla molto più dinamica e interattiva. L'obiettivo, finale, sarebbe quello di inserire tutto lo scheletro del Curriculum e renderlo accessibile a chiunque; per ottenere questo, vorrei impostare solo la struttura, inserendo vari commenti all'interno delle schede di codice per permettere a chi vorrà usarlo di personalizzarlo al massimo!</p>
+                    <p>Sicuramente, per renderla ancora più dinamica, proverò a creare un file gif, così da permettere maggiore movimento della lontra, specie quando si passa sopra col cursore!</p>
                 </div>
                 <div id="project-picture">
-                    <img id="projectp" src="Immagini/CVAM.png" alt="CVAM" width="450" height="350">
+                    <img id="projectp" src="Immagini/mestil.png" alt="mestil" width="450" height="350">
                 </div>
             </div>
 

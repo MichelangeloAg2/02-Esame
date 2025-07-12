@@ -1,0 +1,122 @@
+{
+    "head": {
+        "titolo": "Otter's Club - Privacy Policy",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "Immagini/favicon.png",
+        "css": [
+            "css/main.min.css"
+        ],
+        "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    },
+    "menu": {
+        "logo": "Immagini/LOGO.png",
+        "voci": [
+            {
+                "nome": "Homepage",
+                "link": "index.php"
+            },
+            {
+                "nome": "Chi sono",
+                "link": "chisono.php"
+            },
+            {
+                "nome": "I miei lavori",
+                "link": "i-miei-lavori.php"
+            },
+            {
+                "nome": "Servizi Offerti",
+                "link": "services.php"
+            },
+            {
+                "nome": "Contatti",
+                "link": "contatti.php"
+            },
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            }
+        ]
+    },
+    "title": "Informativa sulla Privacy",
+    "sections": [
+        {
+            "title": "1.FINALITÀ DEL TRATTAMENTO",
+            "content": [
+                "L’Utente può contattare il Titolare attraverso l’apposito form, tramite la navigazione del Sito, oppure via e-mail, via telefono e/o via chat-box. In relazione a tali attività, il Titolare raccoglie dati personali relativi agli Utenti. In particolare, i dati personali degli Utenti saranno lecitamente trattati per le seguenti finalità di trattamento:",
+                "a) evadere la richiesta dell’Utente: i dati personali degli Utenti sono raccolti e trattati dal Titolare al solo fine di evadere la loro richiesta relativa alla ricezione di informazioni e dettagli di varia natura e genere sulle attività del Titolare quali a titolo esemplificativo e non esaustivo: la gestione di interventi d’urgenza, la gestione di servizi legati all’implantologia, alle protesi, all’ortodonzia, all’igiene ed estetica dentale, informazioni sulla possibilità di programmare ed effettuare un check-up medico, una prima visita, un appuntamento o richiedere informazioni su un piano di cura in corso e/o programmato presso una delle cliniche gestite dalle Società Controllate, richiedere informazioni relative ai corsi di formazione erogati dal Titolare, la gestione di tematiche di natura amministrativo/contabile e relative a finanziamenti, l’utilizzo del chat-box, nonché per la formulazione di reclami. I dati dell’Utente raccolti dal Titolare a tale fine includono: nome, cognome, telefono, indirizzo e-mail, CAP, e tutti gli ulteriori dati dell’Utente richiesti all’interno dei form e/o eventualmente e volontariamente comunicati dall’Utente stesso nei campi liberi dei form e/o comunicato all’interno del chat-box, inclusi, dove ritenuto necessario dall’Utente, eventuali dati appartenenti alle categorie particolari ex art. 9 del Regolamento. Nessun altro trattamento verrà effettuato dal Titolare in relazione ai dati personali degli Utenti. Fermo restando quanto previsto altrove in questa informativa privacy, in nessun caso il Titolare renderà accessibili agli altri Utenti e/o a terzi i dati personali degli Utenti. Il Titolare informa che i dati personali dell’Utente, come sopra indicati, saranno trattati altresì dalle singole Società Controllate, di volta in volta coinvolte nell’attività di erogazione delle informazioni richieste dall’Utente, in qualità di con-titolari del trattamento, allo scopo esclusivo di evadere la richiesta stessa di informazioni da parte dell’Utente.",
+                "b) finalità amministrativo-contabili, ovvero per svolgere attività di natura organizzativa, amministrativa, finanziaria e contabile, quali attività organizzative interne ed attività funzionali all’adempimento di obblighi contrattuali e precontrattuali;",
+                "c) obblighi di legge, ovvero per adempiere ad obblighi previsti dalla legge, da un’autorità, da un regolamento o dalla normativa europea.",
+                "Il conferimento dei dati personali per le finalità di trattamento sopra indicate è facoltativo ma necessario, poiché il mancato conferimento degli stessi comporterà l’impossibilità per l’Utente di effettuare la propria richiesta al Titolare.",
+                "I dati personali che sono necessari per il perseguimento delle finalità di trattamento descritte al presente paragrafo sono indicati con un asterisco all’interno del modulo di richiesta."
+            ]
+        },
+        {
+            "title": "2.ULTERIORI FINALITÀ DI TRATTAMENTO: Marketing (invio di materiale pubblicitario, vendita diretta e comunicazione commerciale)",
+            "content": [
+                "Con il consenso libero e facoltativo dell’Utente, alcuni dati personali dell’Utente (ovvero il nome, il cognome, l’indirizzo email) potranno essere trattati dal Titolare anche per finalità di marketing (invio di materiale pubblicitario, vendita diretta e comunicazione commerciale), e per le finalità connesse alla conduzione di indagini di gradimento “survey” per valutare i servizi offerti dalle cliniche gestite dalle Società Controllate, ovvero affinché il Titolare possa contattare l’Utente tramite posta elettronica, telefono (fisso e/o mobile, con sistemi automatizzati di chiamata o di comunicazione di chiamata con e/o senza l’intervento di un operatore) e/o SMS e/o ogni altro sistema o applicazione di messaggistica e/o social network, notifiche push e notifiche in app, per proporre all’Utente l’acquisto di prodotti e/o servizi offerti dallo stesso Titolare e/o da imprese terze, presentare offerte, promozioni ed opportunità commerciali.",
+                "In caso di mancato consenso, la possibilità di inviare la richiesta non sarà in alcun modo pregiudicata.",
+                "In caso di consenso, l’Utente potrà in qualsiasi momento revocare lo stesso, facendone richiesta al Titolare con le modalità indicate al successivo paragrafo 7.",
+                "L’Utente potrà inoltre opporsi facilmente ad ulteriori invii di comunicazioni promozionali via email anche cliccando sull’apposito link per la revoca del consenso, che è presente in ciascuna email promozionale. Effettuata la revoca del consenso, il Titolare invierà all’Utente un messaggio di posta elettronica per confermare l’avvenuta revoca del consenso. Qualora l’Utente intenda revocare il proprio consenso all’invio di comunicazioni promozionali via telefono, continuando tuttavia a ricevere comunicazioni promozionali via e-mail, o viceversa, si prega di inviare una richiesta al Titolare con le modalità indicate al successivo paragrafo 7.",
+                "Il Titolare informa che, a seguito dell’esercizio del diritto di opposizione all’invio di comunicazioni promozionali via e-mail, è possibile che, per ragioni tecniche ed operative (es. formazione delle liste di contatto già completata poco prima della ricezione da parte del Titolare della richiesta di opposizione) l’Utente continui a ricevere alcuni ulteriori messaggi promozionali. Qualora l’Utente dovesse continuare a ricevere messaggi promozionali dopo che siano trascorse 24 ore dall’esercizio del diritto di opposizione, si prega di segnalare il problema al Titolare, utilizzando i contatti indicati al successivo paragrafo 6."
+            ]
+        },
+        {
+            "title": "3. ULTERIORI FINALITÀ DI TRATTAMENTO: Profilazione",
+            "content": "Con il consenso libero e facoltativo dell’Utente i dati personali dell’Utente (ovvero i dati anagrafici e di contatto, le informazioni relative ai servizi verso i quali lo stesso abbia manifestato il proprio interesse) potranno essere trattati dal Titolare anche per finalità di profilazione, ovvero per ricostruire i gusti e le abitudini di consumo dell’Utente, individuandone il profilo di consumatore, al fine di poter inviare all’Utente offerte commerciali coerenti con il profilo individuato. In caso di mancato consenso, la possibilità di inviare la richiesta non sarà in alcun modo pregiudicata. In caso di consenso, l’Utente potrà in qualsiasi momento revocare lo stesso, facendone richiesta al Titolare con le modalità indicate al successivo paragrafo 7."
+        },
+        {
+            "title": "4. BASE GIURIDICA",
+            "content": "Evasione della richiesta dell’Utente: la base giuridica consiste nell’art. 6, comma 1, lett. b) del Regolamento, in quanto il trattamento è necessario all’esecuzione di un contratto e/o all’esecuzione di misure precontrattuali adottate su richiesta dell’Utente. Finalità amministrativo-contabili: la base giuridica consiste nell’art. 6, comma 1, lett. b) del Regolamento. Obblighi di legge: la base giuridica consiste nell’art. 6, comma 1, lett. c) del Regolamento. Ulteriori finalità di trattamento: per le attività di marketing e profilazione, la base giuridica consiste nell’art. 6, comma 1, lett. a) del Regolamento, ovvero la prestazione del consenso da parte dell’interessato."
+        },
+        {
+            "title": "5. MODALITÀ DI TRATTAMENTO E TEMPI DI CONSERVAZIONE DEI DATI",
+            "content": "Il Titolare tratterà i dati personali degli Utenti mediante strumenti manuali ed informatici, con logiche strettamente correlate alle finalità stesse e, comunque, in modo da garantire la sicurezza e la riservatezza dei dati stessi. I dati saranno conservati per i tempi strettamente necessari ad espletare le finalità primarie, o comunque secondo quanto necessario per la tutela in sede civilistica degli interessi del Titolare e degli Utenti. Per le finalità di marketing e profilazione, i dati saranno conservati per 24 e 12 mesi rispettivamente."
+        },
+        {
+            "title": "6. AMBITO DI COMUNICAZIONE E DIFFUSIONE DEI DATI",
+            "content": "Potranno venire a conoscenza dei dati personali degli Utenti i dipendenti e/o collaboratori del Titolare incaricati di gestire il Sito. Potranno inoltre venire a conoscenza soggetti terzi che trattano dati per conto del Titolare come Responsabili del Trattamento ai sensi dell’art. 28 del Regolamento. Le singole Società Controllate coinvolte nell’erogazione delle informazioni potranno trattare i dati in qualità di contitolari. L’Utente ha il diritto di ottenere una lista dei responsabili del trattamento nominati, facendone richiesta al Titolare."
+        },
+        {
+            "title": "7. DIRITTI DEGLI INTERESSATI",
+            "content": "L’Utente può esercitare i diritti garantiti dalla Normativa Applicabile in qualsiasi momento, contattando il Titolare. Tali diritti includono: accesso, aggiornamento, rettifica, cancellazione, limitazione, portabilità dei dati, revoca del consenso, opposizione al trattamento per finalità legittime e di marketing. L’Utente può inoltre proporre reclamo all’Autorità di controllo (Garante per la protezione dei dati personali)."
+        }
+    ],
+    "footer": {
+        "logo": "Immagini/LOGO.png",
+        "info": {
+            "sede": "Viale Pantelleria 35, 00141 Roma (RM)",
+            "piva": "***********",
+            "telefono": "+393484080764",
+            "email": "michelangelo.agasucci@gmail.com",
+            "copyright": "2025 Michelangelo Agasucci"
+        },
+        "social": [
+            {
+                "nome": "LinkedIn",
+                "link": "https://www.linkedin.com/in/michelangelo-agasucci-80b58011b/",
+                "icona": "fa-linkedin"
+            },
+            {
+                "nome": "Instagram",
+                "link": "https://www.instagram.com/michelangeloagasucci/",
+                "icona": "fa-instagram"
+            },
+            {
+                "nome": "Facebook",
+                "link": "https://www.facebook.com/mikelangelo.agasucci",
+                "icona": "fa-facebook-square"
+            }
+        ],
+        "policy": [
+            {
+                "nome": "Privacy Policy",
+                "link": "privacy-policy.php"
+            },
+            {
+                "nome": "Cookies Policy",
+                "link": "#"
+            }
+        ]
+    }
+}

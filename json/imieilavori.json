@@ -47,14 +47,44 @@
                 "lavori": [
                     {
                         "id": "HTML1",
-                        "nome": "CV-Agasucci",
+                        "nome": "Curriculum Vitae - Agasucci",
                         "immagine": {
-                            "src": "Immagini/html.png",
-                            "alt": "avatar"
+                            "src": "Immagini/ciliegio.png",
+                            "alt": "immaginecerchio"
                         },
                         "link": {
-                            "href": "work-1.php",
-                            "title": "Curriculum Vitae-Agasucci"
+                            "href": "work.php?id=HTML1",
+                            "title": "Curriculum Vitae - Agasucci"
+                        },
+                        "cliente": "Agasucci Michelangelo",
+                        "periodo": "Febbraio-Aprile 2025",
+                        "tipo": "Stesura HTML Curriculum",
+                        "url_progetto": "CV.html",
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione1": "Stesura del Curriculum Vitae, in formato HTML5.",
+                            "howto": "Ho impostato lo scheletro di tutta la pagina, cercando di dividere il tutto in diverse sezione. Ho inserito tag come 'section' per poter raggruppare in compartimenti il lavoro e renderlo più semplice da lavorare e gestire per il futuro.",
+                            "future": "Portare avanti il lavoro per rendere il CV dinamico e interattivo, con CSS e JavaScript personalizzabili.",
+                            "immagine_lavoro": "Immagini/CVAM.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -65,8 +95,34 @@
                             "alt": "GDR"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=HTML2",
                             "title": "GDR by Chat"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "howto": "",
+                            "future": "",
+                            "immagine_lavoro": "Immagini/gdrbychat.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -77,8 +133,34 @@
                             "alt": "dipinto-mare"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=HTML3",
                             "title": "Art&Watercolor by Stefania Curzi"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "howto": "",
+                            "future": "",
+                            "immagine_lavoro": "Immagini/watercolor1.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -89,8 +171,34 @@
                             "alt": "ristorante-perla"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=HTML4",
                             "title": "Ristorante La Perla"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "howto": "",
+                            "future": "",
+                            "immagine_lavoro": "Immagini/ristorante-perla.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     }
                 ]
@@ -103,24 +211,80 @@
                         "id": "CSS1",
                         "nome": "NaviBar-Cristal",
                         "immagine": {
-                            "src": "Immagini/css.png",
-                            "alt": "logomenu"
+                            "src": "Immagini/logo_crystal.png",
+                            "alt": "immaginecerchio"
                         },
                         "link": {
-                            "href": "#",
-                            "title": "NaviBar 4 Cristal"
+                            "href": "work.php?id=CSS1",
+                            "title": "Navbar di Cristal-Studio Dentistico"
+                        },
+                        "cliente": "Accademia Code",
+                        "periodo": "Febbraio-Aprile 2025",
+                        "tipo": "Creazione di una Navbar con logo",
+                        "url_progetto": "#",
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "Nuova Navbar con logo per studio dentistico. Creata con HTML5 e migliorata col CSS per aspetto e dinamicità.",
+                            "howto": "Ho impostato le caratteristiche principali della navbar, creando lo scheletro con HTML5. Successivamente, ho apportato modifiche al CSS rendendo i tag <i>ul</i> e <i>li</i> visivamente più accattivanti. In seguito, ho deciso di apportare modifiche al colore, all'<i>hover</i> e alla dinamicità del menù.",
+                            "future": "Implementare il menu con JS per un passaggio device-friendly e menù hamburger mobile.",
+                            "immagine_lavoro": "Immagini/mestil.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
                         "id": "CSS2",
-                        "nome": "Div-Art&Watercolor",
+                        "nome": "Div-Otter's Club",
                         "immagine": {
                             "src": "Immagini/watercolor2.png",
                             "alt": "dipinto-montagna"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=CSS2",
                             "title": "Div 4 Art&Watercolor"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/watercolor2.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -131,8 +295,34 @@
                             "alt": "ciliegio"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=CSS3",
                             "title": "Styling 4 CV-Cherry Blossom"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/ciliegio.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -143,8 +333,34 @@
                             "alt": "backgroundshadow"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=CSS4",
                             "title": "Backgrounds&Shadows"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/bgshadow.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     }
                 ]
@@ -155,14 +371,44 @@
                 "lavori": [
                     {
                         "id": "PS1",
-                        "nome": "Art&Watercolor",
+                        "nome": "Logo Personale",
                         "immagine": {
-                            "src": "Immagini/buttonplug.png",
-                            "alt": "buttonplugwatercolor"
+                            "src": "Immagini/css.png",
+                            "alt": "immaginecerchio"
                         },
                         "link": {
-                            "href": "#",
-                            "title": "Buttons and Plugs"
+                            "href": "work.php?id=PS1",
+                            "title": "Logo personalizzato"
+                        },
+                        "cliente": "Accademia CODE",
+                        "periodo": "Febbraio-Aprile 2025",
+                        "tipo": "Creazione del logo per il personal brand",
+                        "url_progetto": "#",
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "Creazione del logo per il brand personale usando Photoshop. Modifiche al colore e struttura basate su disegno tatuaggio.",
+                            "howto": "Ho utilizzato principalmente Photoshop, per la realizzazione. Basandomi sul disegno del mio tatuaggio, ho attuato diverse modifiche, sia al colore che alla struttura principale. Grazie agli strumenti presenti nella barra laterale, sono riuscito a rimuovere tutto il colore in eccesso, lasciando solo la base colorata nera. Successivamente, ho provveduto a rimuovere uno dei layer principali, così da creare un'immagine .png vuota sullo sfondo. Facendo così, ho alleggerito lìimmagine che ora, in base al colore che darò al sito, risulterà più semplice da gestire!",
+                            "future": "Creare una GIF per aggiungere movimento dinamico al logo al passaggio del cursore.",
+                            "immagine_lavoro": "Immagini/mestil.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -173,8 +419,34 @@
                             "alt": "favicon"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=PS2",
                             "title": "Favicon 4 Otter's Club"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/PS.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -185,8 +457,34 @@
                             "alt": "uxottersclub"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=PS3",
                             "title": "UX Design 4 Otter's Club"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/PS.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     },
                     {
@@ -197,8 +495,34 @@
                             "alt": "dipinto-mare"
                         },
                         "link": {
-                            "href": "#",
+                            "href": "work.php?id=PS4",
                             "title": "Background Image"
+                        },
+                        "css": [
+                            "css/main.min.css",
+                            "css/work1.min.css"
+                        ],
+                        "dettaglio": {
+                            "descrizione": "",
+                            "future": "",
+                            "howto": "",
+                            "immagine_lavoro": "Immagini/watercolor1.png",
+                            "works_simili": [
+                                {
+                                    "nome": "GDR by Chat",
+                                    "src": "Immagini/gdrbychat.png"
+                                },
+                                {
+                                    "nome": "Art & Watercolor by Stefania Curzi",
+                                    "src": "Immagini/watercolor2.png"
+                                },
+                                {
+                                    "nome": "Ristorante La Perla",
+                                    "src": "Immagini/ristorante-perla.png"
+                                }
+                            ],
+                            "feedback_email": "michelangelo.agasucci@gmail.com",
+                            "feedback_link": "contatti.php"
                         }
                     }
                 ]

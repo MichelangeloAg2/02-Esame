@@ -5,7 +5,7 @@
     <?php
     include('link.php');
     ?>
-    <title>Otter's Club-Lavoro 1</title>
+    <title>Otter's Club-Scheda del lavoro</title>
     <link rel="stylesheet" href="CSS/main.min.css">
     <link rel="stylesheet" href="CSS/work1.min.css">
 
@@ -17,38 +17,39 @@
         ?>
 
     </header>
+
     <main>
         <div class="container">
             <div class="presentation-work">
                 <div id="image-circle">
-                    <img id="image" src="Immagini/ciliegio.png" alt="immaginecerchio">
+                    <img id="image" src="Immagini/logo_crystal.png" alt="immaginecerchio">
                 </div>
                 <div id="presentation">
-                    <h1 style="text-align: center;">Curriculum Vitae-Agasucci</h1><br>
-                    <p style="text-align: center;">Cliente: Agasucci Michelangelo<br>
+                    <h1 style="text-align: center;">Navbar di Cristal-Studio Dentistico</h1><br>
+                    <p style="text-align: center;">Cliente: Accademia Code<br>
                         Periodo: Febbraio-Aprile 2025<br>
-                        Tipo di Lavoro: Stesura HTML Curriculum<br>
-                        Link: <a href="CV.html">CV-Agasucci</a>
+                        Tipo di Lavoro: Creazione di una Navbar con logo<br>
+                        Link: <a href="#"></a>
                     </p>
                 </div>
                 <div id="image-circle2">
-                    <img id="image1" src="Immagini/ciliegio.png" alt="immaginecerchio1">
+                    <img id="image1" src="Immagini/logo_crystal.png" alt="immaginecerchio1">
                 </div>
             </div>
+
 
             <div class="description-work">
                 <div id="description">
                     <h3>Tipo di Progetto:</h3>
-                    <p>Stesura del Curriculum Vitae, in formato HTML5. </p><br>
+                    <p>Nuova Navbar con Logo per lo studio Dentistico </p><br>
                     <h3>Come è stato creato:</h3>
-                    <p>Ho impostato lo scheletro di tutta la pagina, cercando di dividere il tutto in diverse sezione. Ho inserito tag come
-                        <i>section</i> per poter raggruppare in compartimenti il lavoro e renderlo più semplice da lavorare e gestire per il futuro.
+                    <p>Ho impostato le caratteristiche principali della navbar, creando lo scheletro con HTML5. Successivamente, ho apportato modifiche al CSS rendendo i tag <i>ul</i> e <i>li</i> visivamente più accattivanti. In seguito, ho deciso di apportare modifiche al colore, all'<i>hover</i> e alla dinamicità del menù.
                     </p><br>
                     <h3>Future applicazioni:</h3>
-                    <p>Portando avanti il lavoro, si potrà ottenere una pagina di Curriculum dinamica, aggiungendo inoltre il CSS e le funzioni di JS, per renderla molto più dinamica e interattiva. L'obiettivo, finale, sarebbe quello di inserire tutto lo scheletro del Curriculum e renderlo accessibile a chiunque; per ottenere questo, vorrei impostare solo la struttura, inserendo vari commenti all'interno delle schede di codice per permettere a chi vorrà usarlo di personalizzarlo al massimo!</p>
+                    <p>E' una buona base solida per poter strutturare future navbar. Si implementerà con JS, non appena sarà possibile rendendo quindi il passaggio di device più semplice e dinamico, permettedo l'inserimento di un menù ad hamburger per dispositivi mobile. </p>
                 </div>
                 <div id="project-picture">
-                    <img id="projectp" src="Immagini/CVAM.png" alt="CVAM" width="450" height="350">
+                    <img id="projectp" src="Immagini/mestil.png" alt="mestil" width="450" height="450">
                 </div>
             </div>
 

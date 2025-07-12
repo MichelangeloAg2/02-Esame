@@ -47,10 +47,10 @@
             <div id="CSS1">
                 <p class="name"><u>NaviBar-Cristal</u></p>
                 <img id="imagec1" src="Immagini/css.png" alt="logomenu"><br>
-                <a class="apri" href="#" title="NaviBar 4 Cristal">Apri</a>
+                <a class="apri" href="work-2.php" title="NaviBar 4 Cristal">Apri</a>
             </div>
             <div id="CSS2">
-                <p class="name"><u>Div-Art&Watercolor</u></p>
+                <p class="name"><u>Div-Otter's Club</u></p>
                 <img id="imagec2" src="Immagini/watercolor2.png" alt="dipinto-montagna"><br>
                 <a class="apri" href="#" title="Div 4 Art&Watercolor">Apri</a>
             </div>
@@ -69,9 +69,9 @@
         <h1 style="text-align: center;"><u>Photoshop Works</u></h1><br>
         <div class="Photoshop">
             <div id="PS1">
-                <p class="name"><u>Art&Watercolor</u></p>
+                <p class="name"><u>Logo personale</u></p>
                 <img id="imagep1" src="Immagini/buttonplug.png" alt="buttonplugwatercolor"><br>
-                <a class="apri" href="#" title="Buttons and Plugs">Apri</a>
+                <a class="apri" href="work-3.php" title="Buttons and Plugs">Apri</a>
             </div>
             <div id="PS2">
                 <p class="name"><u>Favicon</u></p>
@@ -79,12 +79,12 @@
                 <a class="apri" href="#" title="Favicon 4 Otter's Club">Apri</a>
             </div>
             <div id="PS3">
-                <p class="name"><u>UX Design</u></p>
+                <p class="name"><u>UX Design-Sito personale</u></p>
                 <img id="imagep3" src="Immagini/PS.png" alt="uxottersclub"><br>
                 <a class="apri" href="#" title="UX Design 4 Otter's Club">Apri</a>
             </div>
             <div id="PS4">
-                <p class="name"><u>Art&Watercolor</u></p>
+                <p class="name"><u>SASS per sito personale</u></p>
                 <img id="imagep4" src="Immagini/watercolor1.png" alt="dipinto-mare"><br>
                 <a class="apri" href="#" title="Background Image">Apri</a>
             </div>

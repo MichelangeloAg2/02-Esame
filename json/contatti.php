@@ -1,19 +1,19 @@
 <?php
 session_start();
 
-// Carica dati JSON
+// Recupero messaggi e valori vecchi
+$old = $_SESSION['old'] ?? [];
+$errors = $_SESSION['errors'] ?? [];
+$success = $_SESSION['success'] ?? '';
+unset($_SESSION['old'], $_SESSION['errors'], $_SESSION['success']);
+
+// Legge il contenuto del file JSON
 $json = file_get_contents('contatti.json');
 $data = json_decode($json, true);
+
 if ($data === null) {
     die('Errore nel caricamento del file JSON');
 }
-
-// Recupera errori, vecchi dati e messaggio di successo dalla sessione
-$errors = $_SESSION['errors'] ?? [];
-$old = $_SESSION['old'] ?? [];
-$success = $_SESSION['success'] ?? '';
-
-unset($_SESSION['errors'], $_SESSION['old'], $_SESSION['success']);
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,28 @@ unset($_SESSION['errors'], $_SESSION['old'], $_SESSION['success']);
     <?php foreach ($data['head']['css'] as $cssFile): ?>
         <link rel="stylesheet" href="<?= htmlspecialchars($cssFile) ?>">
     <?php endforeach; ?>
+
     <link rel="stylesheet" href="<?= htmlspecialchars($data['head']['fontawesome']) ?>">
+
+    <style>
+        .errore {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .campo-errore input,
+        .campo-errore select,
+        .campo-errore textarea {
+            border: 2px solid red;
+        }
+
+        .successo {
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,10 +58,10 @@ unset($_SESSION['errors'], $_SESSION['old'], $_SESSION['success']);
         <nav class="ham-menu">
             <input id="controll" type="checkbox">
             <label class="label-controll" for="controll"><span></span></label>
-            <a href="index.php"><img class="logo" src="<?= htmlspecialchars($data['menu']['logo']) ?>" alt="logo"></a>
+            <a href="index.php"><img class="logo" src="<?= $data['menu']['logo'] ?>" alt="logo"></a>
             <ul id="menu">
                 <?php foreach ($data['menu']['voci'] as $voce): ?>
-                    <li class="voci"><a href="<?= htmlspecialchars($voce['link']) ?>"><?= htmlspecialchars($voce['nome']) ?></a></li>
+                    <li class="voci"><a href="<?= $voce['link'] ?>"><?= $voce['nome'] ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </nav>
@@ -49,118 +70,95 @@ unset($_SESSION['errors'], $_SESSION['old'], $_SESSION['success']);
     <main>
         <h1 style="text-align: center;"><?= htmlspecialchars($data['main']['titolo']) ?></h1><br>
 
-        <?php if ($success): ?>
-            <p style="color: green; text-align: center; font-weight: bold;"><?= htmlspecialchars($success) ?></p><br>
-        <?php endif; ?>
-
         <?php foreach ($data['main']['sezioni'] as $sezione):
             if ($sezione['tipo'] === 'contatti'): ?>
                 <div class="row">
                     <div class="contatti">
                         <div class="map">
-                            <img id="mappa" src="<?= htmlspecialchars($sezione['mappa']['src']) ?>"
-                                alt="<?= htmlspecialchars($sezione['mappa']['alt']) ?>"
-                                width="<?= intval($sezione['mappa']['width']) ?>"
-                                height="<?= intval($sezione['mappa']['height']) ?>">
+                            <img id="mappa" src="<?= $sezione['mappa']['src'] ?>" alt="<?= $sezione['mappa']['alt'] ?>" width="<?= $sezione['mappa']['width'] ?>" height="<?= $sezione['mappa']['height'] ?>">
                         </div>
                         <div class="recapiti">
-                            <h3 style="text-align: center;"><?= htmlspecialchars($sezione['recapiti']['titolo']) ?></h3>
+                            <h3 style="text-align: center;"><?= $sezione['recapiti']['titolo'] ?></h3>
                             <p style="text-align: center;">
                                 <?php foreach ($sezione['recapiti']['dati'] as $dato): ?>
-                                    <i class="fa <?= htmlspecialchars($dato['icona']) ?>" style="font-size:24px"></i>
-                                    <?= htmlspecialchars($dato['testo']) ?><br>
+                                    <i class="fa <?= $dato['icona'] ?>" style="font-size:24px"></i>
+                                    <?= $dato['testo'] ?><br>
                                 <?php endforeach; ?>
                             </p>
                         </div>
                     </div>
                 </div><br>
-
             <?php elseif ($sezione['tipo'] === 'form'): ?>
-                <h1 style="text-align: center;"><?= htmlspecialchars($sezione['titolo']) ?></h1><br>
+                <h1 style="text-align: center;"><?= $sezione['titolo'] ?></h1><br>
                 <div class="container">
-                    <p style="text-align: center;"><?= htmlspecialchars($sezione['descrizione']) ?></p>
-                    <form action="<?= htmlspecialchars($sezione['action']) ?>" method="<?= htmlspecialchars($sezione['method']) ?>">
-                        <?php foreach ($sezione['campi'] as $campo): ?>
-
+                    <?php if ($success): ?>
+                        <p class="successo"><?= htmlspecialchars($success) ?></p>
+                    <?php endif; ?>
+                    <p style="text-align: center;"><?= $sezione['descrizione'] ?></p>
+                    <form action="<?= $sezione['action'] ?>" method="<?= $sezione['method'] ?>">
+                        <?php foreach ($sezione['campi'] as $campo):
+                            $name = $campo['name'] ?? '';
+                            $value = htmlspecialchars($old[$name] ?? '');
+                            $erroreCampo = isset($errors[$name]);
+                            $classeErrore = $erroreCampo ? 'campo-errore' : '';
+                        ?>
                             <?php if ($campo['tipo'] === 'select'): ?>
-                                <div class="row">
+                                <div class="row <?= $classeErrore ?>">
                                     <div class="col-30">
-                                        <label class="contact" for="<?= htmlspecialchars($campo['name']) ?>"><?= htmlspecialchars($campo['label']) ?></label>
+                                        <label class="contact" for="<?= $name ?>"><?= $campo['label'] ?></label>
                                     </div>
                                     <div class="col-70">
-                                        <select id="<?= htmlspecialchars($campo['name']) ?>" name="<?= htmlspecialchars($campo['name']) ?>"
-                                            style="<?= isset($errors[$campo['name']]) ? 'border:1px solid red;' : '' ?>">
+                                        <select id="<?= $name ?>" name="<?= $name ?>">
                                             <?php foreach ($campo['opzioni'] as $opzione): ?>
-                                                <option value="<?= htmlspecialchars($opzione['value']) ?>"
-                                                    <?= (isset($old[$campo['name']]) && $old[$campo['name']] === $opzione['value']) ? 'selected' : '' ?>>
-                                                    <?= htmlspecialchars($opzione['testo']) ?>
+                                                <option value="<?= $opzione['value'] ?>" <?= ($value == $opzione['value']) ? 'selected' : '' ?>>
+                                                    <?= $opzione['testo'] ?>
                                                 </option>
                                             <?php endforeach; ?>
                                         </select>
-                                        <?php if (isset($errors[$campo['name']])): ?>
-                                            <small style="color:red;"><?= htmlspecialchars($errors[$campo['name']]) ?></small>
-                                        <?php endif; ?>
+                                        <?php if ($erroreCampo): ?><div class="errore"><?= $errors[$name] ?></div><?php endif; ?>
                                     </div>
                                 </div>
-
                             <?php elseif ($campo['tipo'] === 'text'): ?>
-                                <div class="row">
+                                <div class="row <?= $classeErrore ?>">
                                     <div class="col-30">
-                                        <label class="contact" for="<?= htmlspecialchars($campo['name']) ?>"><?= htmlspecialchars($campo['label']) ?></label>
+                                        <label class="contact" for="<?= $name ?>"><?= $campo['label'] ?></label>
                                     </div>
                                     <div class="col-70">
-                                        <input type="text" id="<?= htmlspecialchars($campo['name']) ?>" name="<?= htmlspecialchars($campo['name']) ?>"
-                                            value="<?= htmlspecialchars($old[$campo['name']] ?? '') ?>"
-                                            style="<?= isset($errors[$campo['name']]) ? 'border:1px solid red;' : '' ?>">
-                                        <?php if (isset($errors[$campo['name']])): ?>
-                                            <small style="color:red;"><?= htmlspecialchars($errors[$campo['name']]) ?></small>
-                                        <?php endif; ?>
+                                        <input type="text" id="<?= $name ?>" name="<?= $name ?>" value="<?= $value ?>">
+                                        <?php if ($erroreCampo): ?><div class="errore"><?= $errors[$name] ?></div><?php endif; ?>
                                     </div>
                                 </div>
-
                             <?php elseif ($campo['tipo'] === 'radio-group'): ?>
-                                <div class="row">
-                                    <fieldset style="<?= isset($errors[$campo['name']]) ? 'border:1px solid red; padding: 10px;' : '' ?>">
+                                <div class="row <?= $classeErrore ?>">
+                                    <fieldset>
                                         <legend>
-                                            <?= htmlspecialchars($campo['label']) ?>
-                                            <a href="<?= htmlspecialchars($campo['link']['href']) ?>" title="Visita la Privacy Policy">
-                                                <?= htmlspecialchars($campo['link']['testo']) ?>
-                                            </a>
+                                            <?= $campo['label'] ?>
+                                            <a href="<?= $campo['link']['href'] ?>" title="Privacy"><?= $campo['link']['testo'] ?></a>
                                         </legend>
                                         <?php foreach ($campo['opzioni'] as $opzione): ?>
                                             <label>
-                                                <input type="radio" name="<?= htmlspecialchars($campo['name']) ?>" value="<?= htmlspecialchars($opzione['value']) ?>"
-                                                    <?= (isset($old[$campo['name']]) && $old[$campo['name']] === $opzione['value']) ? 'checked' : '' ?>>
-                                                <?= htmlspecialchars($opzione['testo']) ?>
+                                                <input type="radio" name="<?= $campo['name'] ?>" value="<?= $opzione['value'] ?>" <?= ($value == $opzione['value']) ? 'checked' : '' ?>>
+                                                <?= $opzione['testo'] ?>
                                             </label><br>
                                         <?php endforeach; ?>
-                                        <?php if (isset($errors[$campo['name']])): ?>
-                                            <small style="color:red;"><?= htmlspecialchars($errors[$campo['name']]) ?></small>
-                                        <?php endif; ?>
+                                        <?php if ($erroreCampo): ?><div class="errore"><?= $errors[$name] ?></div><?php endif; ?>
                                     </fieldset><br>
                                 </div>
-
                             <?php elseif ($campo['tipo'] === 'textarea'): ?>
-                                <div class="row">
+                                <div class="row <?= $classeErrore ?>">
                                     <div class="col-30">
-                                        <label class="contact" for="<?= htmlspecialchars($campo['name']) ?>"><?= htmlspecialchars($campo['label']) ?></label>
+                                        <label class="contact" for="<?= $name ?>"><?= $campo['label'] ?></label>
                                     </div>
                                     <div class="col-70">
-                                        <textarea id="<?= htmlspecialchars($campo['name']) ?>" name="<?= htmlspecialchars($campo['name']) ?>"
-                                            rows="<?= intval($campo['rows']) ?>" cols="<?= intval($campo['cols']) ?>"
-                                            style="<?= isset($errors[$campo['name']]) ? 'border:1px solid red;' : '' ?>"><?= htmlspecialchars($old[$campo['name']] ?? '') ?></textarea>
-                                        <?php if (isset($errors[$campo['name']])): ?>
-                                            <small style="color:red;"><?= htmlspecialchars($errors[$campo['name']]) ?></small>
-                                        <?php endif; ?>
+                                        <textarea id="<?= $name ?>" name="<?= $name ?>" rows="<?= $campo['rows'] ?>" cols="<?= $campo['cols'] ?>"><?= $value ?></textarea>
+                                        <?php if ($erroreCampo): ?><div class="errore"><?= $errors[$name] ?></div><?php endif; ?>
                                     </div>
                                 </div>
-
                             <?php elseif ($campo['tipo'] === 'submit'): ?>
                                 <div class="row">
-                                    <input type="submit" value="<?= htmlspecialchars($campo['value']) ?>">
+                                    <input type="submit" value="<?= $campo['value'] ?>">
                                 </div>
                             <?php endif; ?>
-
                         <?php endforeach; ?>
                     </form>
                 </div>
@@ -171,16 +169,30 @@ unset($_SESSION['errors'], $_SESSION['old'], $_SESSION['success']);
     <footer>
         <div class="footer">
             <div class="footer-logo-info">
-                <img id="footer-logo" src="<?= htmlspecialchars($data['footer']['logo']) ?>" alt="logo-footer"><br>
+                <img id="footer-logo" src="<?= $data['footer']['logo'] ?>" alt="logo-footer"><br>
                 <p>
-                    <b>Sede Legale:</b> <?= htmlspecialchars($data['footer']['info']['sede']) ?><br>
-                    <b>P.IVA:</b> <?= htmlspecialchars($data['footer']['info']['piva']) ?><br>
-                    <b>Telefono:</b> <?= htmlspecialchars($data['footer']['info']['telefono']) ?><br>
-                    <b>Email:</b> <?= htmlspecialchars($data['footer']['info']['email']) ?><br>
-                    <i class="fa fa-copyright"></i>
-                    <?= htmlspecialchars($data['footer']['info']['copyright']) ?>
+                    <b>Sede Legale:</b> <?= $data['footer']['info']['sede'] ?><br>
+                    <b>P.IVA:</b> <?= $data['footer']['info']['piva'] ?><br>
+                    <b>Telefono:</b> <?= $data['footer']['info']['telefono'] ?><br>
+                    <b>Email:</b> <?= $data['footer']['info']['email'] ?><br>
+                    <i class="fa fa-copyright"></i> <?= $data['footer']['info']['copyright'] ?>
                 </p>
             </div>
-
             <div class="footer-social">
-                <h5>Contattami sui
+                <h5>Contattami sui Social!</h5>
+                <?php foreach ($data['footer']['social'] as $social): ?>
+                    <i class="fa <?= $social['icona'] ?>" style="font-size:24px"></i>
+                    <a href="<?= $social['link'] ?>" target="_blank"><?= $social['nome'] ?></a><br>
+                <?php endforeach; ?>
+
+                <h5 style="margin-top: 10px;">Privacy&Cookies Policy</h5>
+                <?php foreach ($data['footer']['policy'] as $policy): ?>
+                    <a href="<?= $policy['link'] ?>" target="_blank"><?= $policy['nome'] ?></a><br>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
